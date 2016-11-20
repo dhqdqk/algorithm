@@ -10,23 +10,23 @@ def find_nums(a):
     if isinstance(a, list):
         n = len(a)
     else:
-        print "not a list data"
+        print("not a list data")
         return
 
-    print "the length of the list:", n
+    print("the length of the list:", n)
     for i in range(n):
         a[(a[i] - 1) % n] += n
 
-    print a
-    print "nun not in list: "
+    print(a)
+    print("nun not in list: ")
     for i in range(n):
         if (a[i] - 1) / n == 0:
-            print i + 1,
+            print(i + 1,)
 
-    print "\nnum more than one time in list: "
+    print("\nnum more than one time in list: ")
     for i in range(n):
         if (a[i] - 1) / n > 1:
-            print i + 1,
+            print(i + 1,)
 
 if __name__ == "__main__":
     a = [1, 1, 3, 3, 2, 5, 2]

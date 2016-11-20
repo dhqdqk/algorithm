@@ -8,16 +8,13 @@
 要求：O（n）时间复杂度和O（1）空间复杂度。
 """
 
-x = [10, 2, 3, 4, 1, -1]
-
-
 def intlist_find_min_lostpi(x):
     y = []
     for i in x:
         if i > 0:
             y.append(i)
 
-    print y
+    print(y)
 
     N = max(y)
     # 以最大整数创建为0的列表
@@ -34,5 +31,6 @@ def intlist_find_min_lostpi(x):
     for k in range(N + 1):
         if List[k] == 0:
             return k
-
-print intlist_find_min_lostpi(x)
+if __name__ == "__main__":
+    x = [10, 2, 3, 4, 1, -1]
+    print(intlist_find_min_lostpi(x))
